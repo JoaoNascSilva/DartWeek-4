@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "43685202188",
+    "project_id": "appmovieacademiadoflutter",
+    "storage_bucket": "appmovieacademiadoflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43685202188:android:be8b602ccfcbda54cee129",
+        "android_client_info": {
+          "package_name": "br.com.academiadoflutter.appmovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43685202188-hi5k30otnblb26lve3grsure17a177ml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.academiadoflutter.appmovie",
+            "certificate_hash": "7e8ae902aa58aa5511ab4b97a8a4d55b0ecc5097"
+          }
+        },
+        {
+          "client_id": "43685202188-s9bc6c9cbc94nmpng6kng89j8o81v316.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgSnbIr__OOVh_9vcyvKq7VQz9wdu9b8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43685202188-s9bc6c9cbc94nmpng6kng89j8o81v316.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
