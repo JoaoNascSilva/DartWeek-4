@@ -1,3 +1,8 @@
+import 'package:appmovie/application/UI/movies_app_UIConfig.dart';
+import 'package:appmovie/application/bindings/application_bindings.dart';
+import 'package:appmovie/modules/home/home_module.dart';
+import 'package:appmovie/modules/login/login_module.dart';
+import 'package:appmovie/modules/movies/movies_module.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
@@ -13,17 +18,18 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      initialBinding: ApplicationBindings(),
+      title: MoviesAppUiConfig.title,
+      theme: MoviesAppUiConfig.themeData,
       getPages: [
         ...SplashModule().routers,
+        ...LoginModule().routers,
+        ...HomeModule().routers,
+        ...MoviesModule().routers
       ],
     );
   }
