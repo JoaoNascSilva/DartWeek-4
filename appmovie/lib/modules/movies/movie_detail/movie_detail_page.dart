@@ -1,7 +1,8 @@
+import 'package:appmovie/modules/movies/movie_detail/widget/movie_detail_content/movie_detail_content.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'movie_detail_controller.dart';
-import 'movie_detail_header.dart';
+import 'widget/movie_detail_header.dart';
 
 class MovieDetailPage extends GetView<MovieDetailController> {
   const MovieDetailPage({Key? key}) : super(key: key);
@@ -10,14 +11,18 @@ class MovieDetailPage extends GetView<MovieDetailController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Movies Detail'),
+        title: Text('Detalhes'),
       ),
       body: SingleChildScrollView(
         child: Obx(
           () {
             return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 MovieDetailHeader(
+                  movie: controller.movie.value,
+                ),
+                MovieDetailContent(
                   movie: controller.movie.value,
                 ),
               ],
